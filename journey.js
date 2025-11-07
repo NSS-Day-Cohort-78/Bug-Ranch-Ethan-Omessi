@@ -7,7 +7,7 @@ const createRivers = () => {
 
 const createMountains = () => {
     const mountains = Math.floor(Math.random() * 2) + 1
-    return mauntains
+    return mountains
 }
 
 const createForests = () => {

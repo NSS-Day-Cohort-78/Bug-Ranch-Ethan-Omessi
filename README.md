@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Drover is a array that holds the id number and breed of the cow
+   > When that line of code is run, the const drovers will now have the value of the function hireDrover and in the hireDrover the parameter is cattleToDrive which holds the value of 50.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > It looks like drovers is a iterableObject while drover is a parameter
+   > Drover is an element in the for of loop. Drovers is an Object. The value of drover is as an array. This lets the function target certain objects in the array. In the function body, line 32 is console logging (in Java terms system.out.println) the first and last name of the drovers in a list format. 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Your public Loom URL here](https://www.loom.com/share/0dcdaf0a8f064ab086d462423e270658?sid=f4bea902-b6c4-43f2-bb20-f395c414b977)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > The function is a "for of" loop that makes forestNumber = 0 (forestNumber is also attached to let which allows it to change its numeric value) and has the function compare forestNumber to areas.forest(areas.forest is targeting the forest object in the area array) and seeing if forestNumber is less then areas.forest. If the forestNumber is less than area.forest then forest will be pushed into journey (this is in the body of the loop). And since its a "For of" loop it will restart the loop but this time it will take the past area.forest value and add it to the forestNumber(the forestNumber++) and because forestNumber is now changed its value it will go to the next area.forest.  
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The value of the database variable is an array that has two other arrays. It holds cattleTypes array and drovers array. The cattleTypes array has the cattle's id number and breed. While the drovers array holds the id number, first name, last name, and gender of the drover. The database array is known as a multidimensional array.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > In the function hireDrovers the herdSize is a parameter. The job the parameter works is has a placeholder. It lets certain values/arguments pass into the function. In this function herdSize isn't read but if a person would want herdSize to be read then they would need to make a string in the function body.
 
 ## When You Are Done
 
